@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/rulestext"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="260dp"
+        android:layout_centerHorizontal="true"
+        android:text="RULES"
+        android:textSize="50dp"
+        android:textColor="@color/colorPrimary"/>
+
+
+    <TextView
+        android:id="@+id/bodytext"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        android:lineSpacingExtra="5dp"
+        android:text="Get 3 of the same images to win 50 Points!
+
+76ers - 15 Points Each
+
+Warriors - 0 Points
+
+Heat - 0 Points
+
+Lakers - 0 Points
+"
+        />
+
+
+
+
+</RelativeLayout>

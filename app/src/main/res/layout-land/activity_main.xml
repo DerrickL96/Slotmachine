@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.slotmachine.MainActivity"
+    android:id="@+id/layout1"
+    android:background="@color/colorPrimary">
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="1"
+        android:columnCount="3">
+
+    </GridLayout>
+
+
+    <SeekBar
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_above="@+id/rulesbutton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="28dp"
+        android:max="2" />
+
+    <Button
+        android:id="@+id/startbutton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/rulesbutton"
+        android:layout_alignBottom="@+id/rulesbutton"
+        android:layout_toEndOf="@+id/image1"
+        android:layout_toRightOf="@+id/image1"
+        android:text="Start"
+        android:onClick="startPressed"/>
+
+
+    <Button
+        android:id="@+id/rulesbutton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="17dp"
+        android:layout_toLeftOf="@+id/image3"
+        android:layout_toStartOf="@+id/image3"
+        android:onClick="rulesPressed"
+        android:text="Rules" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="SCORE: 0"
+        android:textSize="35dp" />
+
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/image2"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:background="@drawable/p76ers"
+        android:padding="10dp" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/grid"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/heat"
+        android:padding="10dp" />
+
+    <ImageView
+        android:padding="10dp"
+        android:id="@+id/image3"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/image2"
+        android:background="@drawable/warriors" />
+
+</RelativeLayout>
